@@ -1,0 +1,54 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    justify-content: center;
+}
+
+.main__title{
+    display: inline;
+
+}
+.instructions__text{
+    display: inline-block;
+    margin:20px;
+    padding: 20px;
+    background-color:rgb(229, 237, 240);
+    appearance: none;
+    color: blue;
+    font-size: inherit;
+    font-family:  Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+   
+}
+.selectForm{
+    display: block;
+    margin:20px;
+    padding: 5px;
+    background-color:lightblue;
+    appearance: none;
+    color: blue;
+    font-size: inherit;
+    font-family:  Arial, Helvetica, sans-serif;
+    border-bottom: 5px solid blue;
+
+}
+
+.imageBasics{
+    margin: 30px; 
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    border: 3px solid blue;
+   
+    
+}
