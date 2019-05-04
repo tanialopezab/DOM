@@ -84,19 +84,27 @@ const inputPhoneElement = document.getElementById('phoneNumber');
 function getDecision() {
     let selectContent = selectELement.value;
 
-    if (selectContent === 'Ana') {
-        inputNameElement.value = arrData[0].name;
-        inputSurnameElement.value = arrData[0].surname;
-        inputPhoneElement.value = arrData[0].phone;
+    // if (selectContent === 'Ana') {
+    //     inputNameElement.value = arrData[0].name;
+    //     inputSurnameElement.value = arrData[0].surname;
+    //     inputPhoneElement.value = arrData[0].phone;
 
-    } else if (selectContent === 'María') {
-        inputNameElement.value = arrData[1].name;
-        inputSurnameElement.value = arrData[1].surname;
-        inputPhoneElement.value = arrData[1].phone;
-    } else {
-        inputNameElement.value = arrData[2].name;
-        inputSurnameElement.value = arrData[2].surname;
-        inputPhoneElement.value = arrData[2].phone;
+    // } else if (selectContent === 'María') {
+    //     inputNameElement.value = arrData[1].name;
+    //     inputSurnameElement.value = arrData[1].surname;
+    //     inputPhoneElement.value = arrData[1].phone;
+    // } else {
+    //     inputNameElement.value = arrData[2].name;
+    //     inputSurnameElement.value = arrData[2].surname;
+    //     inputPhoneElement.value = arrData[2].phone;
+    // }
+
+    for(let i = 0; i<arrData.length; i++){
+        if(selectContent === arrData[i].name){
+            inputNameElement.value = arrData[i].name;
+            inputSurnameElement.value = arrData[i].surname;
+            inputPhoneElement.value = arrData[i].phone;
+        }
     }
 }
 
